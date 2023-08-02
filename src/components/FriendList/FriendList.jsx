@@ -3,9 +3,9 @@ import { FriendListItem } from './FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul class="friend-list">
+    <ul>
       {friends.map(friend => (
-        <li key={friend.id} class="item">
+        <li key={friend.id}>
           <FriendListItem friend={friend} />
         </li>
       ))}
