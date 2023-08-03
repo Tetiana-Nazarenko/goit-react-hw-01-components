@@ -1,5 +1,5 @@
 import { OnlineStatus, PhotoFriend, NameFriend } from './FriendList.styled';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ friend: { avatar, name, isOnLine } }) => {
   return (
