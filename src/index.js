@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
-import './index.css';
+
+//*** */
+//import { ThemeProvider } from 'styled-components';
+
+// const theme = {
+//   colors: {
+//     true: 'green',
+//     false: 'red',
+//   },
+// };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,11 +1,15 @@
+import { Layout } from './Layout.js';
+import { GlobalStyle } from './GlobaleStyle.js';
+
+//*** */
 import { Profile } from './Profile/ProfileCard.jsx';
 import user from './Profile/user.json';
-import './Profile/Profile.css';
+import './Profile/Profile.styled.js';
 
 //*** */
 import { Statistics } from './Statistics/Statistics.jsx';
 import data from './Statistics/data.json';
-import './Statistics/statistics.css';
+
 //*** */
 import { FriendList } from './FriendList/FriendList.jsx';
 import friends from './FriendList/friends.json';
@@ -16,7 +20,7 @@ import transactions from './TransactionHistory/transactions.json';
 //*** */
 export const App = () => {
   return (
-    <div
+    <Layout
     // style={{
     //   height: '100vh',
     //   display: 'flex',
@@ -38,6 +42,7 @@ export const App = () => {
       <FriendList friends={friends} />
 
       <Transaction items={transactions} />
-    </div>
+      <GlobalStyle />
+    </Layout>
   );
 };

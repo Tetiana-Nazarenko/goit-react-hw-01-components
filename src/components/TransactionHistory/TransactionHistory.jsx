@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Transaction = ({ items }) => {
   return (
     <table>
@@ -20,4 +22,8 @@ export const Transaction = ({ items }) => {
       </tbody>
     </table>
   );
+};
+
+Transaction.propTypes = {
+  items: PropTypes.array,
 };
