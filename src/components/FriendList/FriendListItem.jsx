@@ -1,18 +1,18 @@
 import { OnlineStatus, PhotoFriend, NameFriend } from './FriendList.styled';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-export const FriendListItem = ({ friend: { avatar, name, isOnLine } }) => {
+export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   return (
     <>
-      <OnlineStatus isOnline={isOnLine}></OnlineStatus>
+      <OnlineStatus $isonline={isOnline.toString()}></OnlineStatus>
       <PhotoFriend src={avatar} alt="User avatar" width="48" />
       <NameFriend>{name}</NameFriend>
     </>
   );
 };
 
-// FriendListItem.propTypes = {
-//     avatar: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     isOnLine: PropTypes.boolean.isRequired,
-//   };
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+};
